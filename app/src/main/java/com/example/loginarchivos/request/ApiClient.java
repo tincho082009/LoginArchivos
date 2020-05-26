@@ -25,7 +25,7 @@ public class ApiClient {
     public static void guardar(Context context, Usuario u){
         archivo = conectar(context);
         try{
-            FileOutputStream fo = new FileOutputStream(archivo);
+            FileOutputStream fo = new FileOutputStream(archivo, false);
             BufferedOutputStream bo = new BufferedOutputStream(fo);
             DataOutputStream dos = new DataOutputStream(bo);
 
